@@ -1,0 +1,11 @@
+<h1>User</h1>
+<p>
+<%= @user = User.find(params[:id])%>
+ Name: <%= @user.username %>
+</p>
+<p>
+ Email: <%= @user.email %>
+</p>
+<%= link_to "Edit", edit_user_path(@user), class: "btn btn-xs btn-primary" %>
+
+<%= link_to 'Back', articles_path, class: "btn btn-xs btn-success" %>

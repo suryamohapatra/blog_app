@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   root 'pages#index'
   get 'about', to: 'pages#about'
   resources :articles
-  get 'signup', to: 'users#new'
+  get 'user/signup', to: 'users#new'
   resources :users
 end
